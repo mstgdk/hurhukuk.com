@@ -1,0 +1,733 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    }
+html {
+      font-size: 10px;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+           }
+body {
+    height: 100%;
+    /*background-image: url("images/arkaplan_body.png");*/
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position:top;
+    margin: 0px;
+    padding: 0px;
+    filter: opacity(1);
+    background-attachment: fixed;
+    z-index: 500;
+    /*background-image: linear-gradient();*/
+    }
+.container {
+	width: 100%;
+	margin-left: auto;
+      margin-right: auto;
+}    
+@media (min-width: 576px) {
+	
+	.container {
+		max-width: 540px;
+	}
+	
+	html {
+		font-size: 7px;
+	}	
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+	
+	html {
+		font-size: 8px;
+	}
+	
+	.col {
+		width: 50%;
+	}
+      body {
+            background-size:cover ;
+            background-repeat:no-repeat;
+            background-position:top;
+            
+      }
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;	
+	}
+	
+	html {
+		font-size: 10px;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+	
+	html {
+		font-size: 10px;
+	}
+}
+
+    
+/*ACTION BAR*/
+.actionbar {
+      background-color: #8f8e8e;
+      margin-bottom: 1px;
+      
+      
+               }
+div.actionbar span a {
+      color: blanchedalmond;
+      font-size: 1.5rem; 
+         }
+div.actionbar span a:hover {
+      color: #f7e07b;
+      transition: 1300ms;
+  }
+  div.actionbar span:hover {
+        color: rgb(252, 206, 0);
+  }  
+.phone {
+      margin-left: 50px;
+      margin-right: 50px;
+                  }     
+.fas fa-envelope-open-text {
+      color: #ffd61e;
+}
+
+@media (max-width: 557px) {
+      .actionbar span {
+            display: block;
+            text-align: center;
+      }
+   }    
+    
+/*NAVBAR*/
+  nav {
+      
+      position: fixed;
+      z-index: 99;
+      background-color: black;
+      filter: opacity(1);*/
+      }
+/*nav div {
+      padding: 15px;
+            }    */
+#slogan {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #bd8546;
+          }
+#slogan:hover {
+      color: goldenrod;
+      transition: 1300ms;
+}
+
+#hukuklogo:hover {
+      src: url(images/hukuklogo2.png);
+}
+nav div a div div {
+      text-align: center;
+}
+#navbarCollapse {
+      transition: 2s;
+}
+#hukuklogodiv {
+      overflow: hidden;
+     /* background-image: url("images/hukuklogo2.png");*/
+}
+
+
+/*nav a:active {
+    background-color: dodgerblue;
+      color: white;       
+}*/
+.navbar-expand-sm.scrolled {
+      background-color: #bd8546 !important;
+      /*background-color: #a67033 !important;*/
+      transition: background-color 200ms linear;
+    }
+
+.navbar-expand-sm.scrolled a {
+      color: black;
+}  
+.navbar-expand-sm.scrolled a:hover {
+      color: white;
+} 
+
+.navbar-expand-sm.scrolled #slogan {
+      color: black;
+}   
+.navbar-expand-sm.scrolled .fas {
+      color: black;
+}
+
+.navbar-expand-sm.scrolled img {
+      src: url(images/hukuklogo2.png) !important;
+}
+
+  .nav-item:hover {
+      /*background-color: goldenrod;*/
+      font-size: 2rem;
+      transition:1000ms;
+      color: khaki;
+  
+                   }        
+  .nav-item {
+      font-size: 1.9rem;
+      margin-right: 4px;
+      margin-left: 4px;
+      border-top: 0px;
+      border-bottom: 0px;
+      border-right: 1px; 
+      border-left: 0px;
+      border-color: rgb(139, 112, 84);
+      border-style: solid;
+            }
+.navbar-nav ul li:last-child {border-right: 0px;}
+
+  
+  li a.nav-link {
+      color: #bd8546;
+      font-weight: bold;
+  }
+  li a.nav-link:hover{
+      color: goldenrod;
+  }
+
+  @media (max-width: 1200px) {
+      .navbar-toggler {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            font-size: 1.9rem;
+      }
+  }
+@media (max-width: 558px) {
+      .navbar-expand-sm.scrolled .fas {
+            color: rgb(12, 12, 12);
+      }
+      .navbar-expand-sm.scrolled .fas:hover {
+            color: rgb(102, 92, 92);
+      }
+      .navbar-expand-sm .fas {
+            color: #bd8546;
+            font-size:x-large;
+      }
+      .nav-item {
+          background-color: #bd8546;
+          filter: opacity(0.9);
+          border-radius: 5px;
+          border-bottom: solid 2px #000;
+          border-right: none;
+      }
+      li a.nav-link {
+            color: white;
+            filter: opacity(1);
+            text-align: center;
+      }
+      li a.nav-link:hover{
+            color: rgb(12, 12, 12);
+              }      
+  }  
+/*WHATSAPP*/
+.whatsapp {
+      float: right;
+      position: sticky;
+      top: 130px;
+      right: 10px;
+      z-index: 99;
+}
+.fa-whatsapp-square {
+      color: green;
+}
+
+
+
+#özlüsöz {
+      background-image:url("images/kizkulesi.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 60rem;
+     width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+}
+
+#özlüsöz p {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 3px 3px 5px #bd8546;
+      color: #000;
+}
+#indexçalışmaalanları {
+      background-color: #bd85462f;
+      margin-top: 3rem;
+}
+#indexçalışmaalanlarıbaşlık  {
+      box-shadow: 3px 3px 6px 6px  rgb(12, 12, 12);
+      width: 100%;
+      text-align: center;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      background-color: #bd8546;
+      background-image: linear-gradient(to left,#fffefe,#bd8546);
+      }
+#indexçalışmaalanlarıbaşlık h2 {
+      font-size: 3rem;
+}      
+#indexçalışmaalanları .row {
+      display: flex;
+      justify-content: center;
+}
+#indexçalışmaalanları .col-sm-4 {
+     padding: 6rem 6rem 6rem 6rem;      
+}
+#indexçalışmaalanları img {
+      border-radius: 6px;
+      box-shadow: 6px 6px 6px 3px rgb(26, 25, 25);
+}
+@media (max-width: 568px) {
+      #özlüsöz {
+            height: 40rem;
+      }
+      #özlüsöz p {
+            font-size: 1.5rem;
+      }
+     #indexçalışmaalanlarıbaşlık {
+            padding-bottom: 0.9rem;
+            padding-top: 0.9rem;
+      } 
+     #indexçalışmaalanları .col-sm-4 {
+            padding: 4rem 4rem 4rem 4rem;      
+       }
+}
+    /*FOOTER*/
+
+footer {
+      background-color: black;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+}
+#footer {
+      display: flex;
+      justify-content: space-around;
+}
+footer li {
+     color: #ddd; 
+     list-style-type: none;
+     font-size: 1.3rem ;
+}
+footer p {
+      color: #ddd;
+}
+footer #çalışmaa li {
+      list-style-type: square;
+      margin-left: 2rem;
+}
+footer a {
+      padding-left: 1rem;
+}
+footer a:hover {
+      color:rgb(241, 200, 97) ;
+      transition: 700ms;
+      font-size: 1.4rem;
+}
+footer span {
+      color: #fff !important;
+}
+footer i {
+      color: #bd8546;
+      font-size: 1.6rem;
+}
+#footeriletişim i:hover {
+      color: #8d5617;
+      font-size: 1.8rem;
+}
+#çalışmaa i:hover {
+      color: #8d5617;
+      font-size: 1.8rem;
+}
+#faydalılink i:hover {
+      color: #8d5617;
+      font-size: 1.8rem;
+}
+footer .sm-2 {
+      margin-left: 3.5rem;
+      margin-right: 3.5rem;
+      margin-top: 2rem;
+}
+footer a {
+      color: #ddd;
+}
+#sosyalmedya .fa-twitter {
+      color: #0b95f1;
+}
+#sosyalmedya .fa-linkedin {
+      color:#0c4d79 ;
+}
+
+/*BAŞA DÖN*/
+.backtotop {
+      width: 2rem;
+      color: #bd8546;
+}
+.backtotop:hover {
+      color: #f0be34;
+      transition: 900ms;
+      cursor:pointer;
+}
+#backtotop {
+      position: fixed;
+      right: 4rem;
+      bottom: 20rem;
+}
+
+.copyright {
+	background-color: #1A252F;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: #fff;
+	text-align: center;
+}
+/*HAKKIMIZDA*/
+#avukatlarbaslik {
+      background-image:linear-gradient(#bd8546,#ffffff);
+      margin-top: 0;
+      margin-bottom: 5rem;
+}
+#avukatlarbaslik h1 {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-size: 4rem;
+      font-weight: 500;
+      font-stretch: wider;
+      text-shadow: 3px 3px 5px #d8d8dd;
+}
+#avukatrow {
+      border-radius: 5px;
+      /*border: #bd8546 solid 0.5px;*/
+      background-color: #faf8ed;
+      height: 40rem;
+      padding-top: 1.5rem;
+}
+#fotograf img {
+      width: 100%;
+      border-radius: 2px;
+}        
+
+#avukatisimlik p{
+      font-size: 2.5rem;
+      
+}
+#biyografimetni p{
+      font-size: 2rem;
+      text-align: justify;
+      text-decoration: dotted;
+}
+@media (max-width: 558px) {
+      #avukatcontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+      }
+      #avukatrow {
+            width: 90%;
+            height: 80rem;
+            
+      }
+      #avukatlarbaslik h1 {
+            font-weight:normal;
+            font-size: 3rem;
+      }
+      #avukatisimlik p {
+            text-align: center;
+            font-size: 2.2rem;
+      }
+      #biyografi {
+            padding-top: 12px;
+      }
+      #biyografimetni p {
+            font-size: 1.7rem;
+      }
+     footer .row {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+     }
+     footer .col-sm-2 {
+           margin-top: 10px;
+           margin-bottom: 10px;
+     }
+     /*#sosyalmedya {
+           display: inline;
+     }
+     footer #sosyalmedya li {
+           float: left;
+     }
+     footer #sosyalmedya ul {
+      display: inline;
+     }*/
+}
+
+
+
+  
+
+
+
+/*SSS*/
+
+#accordionparent h1 {
+      font-size: 2.4rem;
+}
+
+#accordion a {
+      font-size: 2rem;
+      color: #000;
+}
+#accordion .collapse {
+      font-size: 1.8rem;
+}
+
+/*ÇALIŞMA ALANLARIMIZ*/
+#çalışmaalanlarımız {
+      padding-top: 5rem;
+}
+#çalışmaalanlarımız .col-sm-4 {
+      padding: 1.5rem;
+}
+#çalışmaalanlarımız .card-header {
+      text-align: center;
+      font-size: 1.8rem;
+}
+
+/*İLETİŞİM*/
+
+#iletişimformu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+} 
+#iletişimformu div {
+      background-color: #f7f3f010;
+      padding: 1rem 1rem 1rem 1rem;
+      box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+      border-radius: 10px;
+}
+
+
+fieldset h2 {
+      font-size: 2.5rem;
+}
+fieldset form {
+      font-size: 1.8rem;
+}
+fieldset p {
+      height: 7rem;
+}
+input, textarea {
+      padding: 3px;
+      border: 1px solid #E5E5E5;
+      border-radius: 4px;
+      width: 80%;
+      color: #999999;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+hr {
+      border: 1px solid #bd8546 !important; 
+       
+}
+textarea {
+      
+      height: 120px;
+      max-width: 400px;
+      line-height: 18px;}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+      border-color: 1px solid #bd8546;
+      box-shadow: #bd8546 0px 0px 8px;
+      -moz-box-shadow: #bd8546 0px 0px 8px;
+      -webkit-box-shadow: #bd8546 0px 0px 8px;	
+      }
+#temizle, #gönder {
+      width: 90px !important;
+}
+
+/*YENİ İLETİŞİM ÇALIŞMASI*/
+#iletişim {
+      display: flex;
+      justify-content: flex-end;
+      background-image:url(images/iletişim2.jpg);
+      /*height: 100%;*/
+      background-position: left 15px;
+      background-size: cover;
+      box-shadow: rgb(209, 207, 207) 0 0px 20px -1px;
+}
+#iletişim div {
+      width: 350px;
+      background: rgb(250, 250, 250);
+      padding: 2rem  3rem 2rem 3rem;
+}
+@media(max-width: 592px) {
+      input, textarea {
+            width: 300px;
+        
+      }
+}
+@media(max-width: 592px) {
+      #iletişim div {
+            width: 100%;
+            padding: 1rem 1rem 1rem 1rem; 
+            box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+      }
+      #iletişim {
+            background-image: none;
+            justify-content: center;
+            box-shadow: none;
+      } 
+}
+/*.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea,
+.contact button[type="submit"] {
+    font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+ 
+.contact {
+    background: #F9F9F9;
+    padding: 15px;
+    margin: 50px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 6px;
+}
+ 
+.contact h2 {
+    display: block;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+ 
+.form-control{
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+ 
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+ 
+.contact input[type="text"]:hover,
+.contact input[type="email"]:hover,
+.contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+ 
+.contact textarea {
+    max-width: 100%;
+    resize: none;
+}
+ 
+.contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #79A7A8;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+ 
+.contact button[type="submit"]:hover {
+    background: #355C7D;
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+.contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+.contact input:focus,
+.contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}*/
+    border-radius: 6px;
+}
+#iletişimbox {
+      width: 75%;
+      border-radius: 3px;
+     
+      
+      
+}
+#iletişimbox .col-xs-4 {
+      margin: 10px;
+      padding: 70px 25px 70px 25px;
+      width: 300px;
+      background-color: rgb(190, 156, 111) !important;
+      border-style: solid;
+      border-radius: 5px;
+      border-width: 2px;
+      border-color: aliceblue;
+      
+}
+#iletişimbilgileri li {
+      display: block;
+      color: #FFF;
+      text-align: center;
+      
+}
+#iletişimbilgileri a {
+      text-align: center;
+      color: #FFF;
+      font-size: 1.8rem;
+}
+#iletişimbox h3 {
+      text-align: center; 
+      color:lemonchiffon;
+      font-size: 2.3rem;
+}
+#iletişimbox p {
+      text-align: center;
+      color: #FFF;
+      font-size: 1.8rem;
+}
